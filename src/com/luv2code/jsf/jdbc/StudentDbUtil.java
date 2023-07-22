@@ -29,7 +29,7 @@ public class StudentDbUtil {
 	}
 	
 	private StudentDbUtil() throws Exception {		
-		dataSource = getDataSource();
+		//dataSource = getDataSource();
 	}
 
 	private DataSource getDataSource() throws NamingException {
