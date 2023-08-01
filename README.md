@@ -2,7 +2,11 @@
 >- https://www.udemy.com/course/java-simplecrud/learn/lecture/18578554#overview
 >- https://www.udemy.com/course/jsf-tutorial/learn/lecture/2617738#overview
 
+### driver oracle para conectarse a base de datos
+>- https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html
 
+### tablas autoincrementales
+>- https://es.stackoverflow.com/questions/524710/crear-un-primary-key-auto-increment-en-oracle
 
 ### Repositorio de librerias java
 >- mvnrepository.com
@@ -58,5 +62,5 @@ https://www.youtube.com/watch?v=wxhLn--rZ2o
 
 
 
-### solución a error target runtime apache tomcat v8.0 is not defined
+### soluciï¿½n a error target runtime apache tomcat v8.0 is not defined
 >- https://stackoverflow.com/questions/37698738/eclipse-target-runtime-apache-tomcat-v7-0-is-not-defined

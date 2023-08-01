@@ -33,8 +33,13 @@
 	    <res-ref-name>jdbc/student_tracker_sqlserver</res-ref-name>
 	    <res-type>javax.sql.DataSource</res-type>
 	    <res-auth>Container</res-auth>
-  	</resource-ref>
-  
+  </resource-ref>
+  <resource-ref>
+	    <description>Student Tracker Datasource Oracle SQL</description>
+	    <res-ref-name>jdbc/student_oracle</res-ref-name>
+	    <res-type>javax.sql.DataSource</res-type>
+	    <res-auth>Container</res-auth>
+  </resource-ref>
   <welcome-file-list>
   	<welcome-file>index.html</welcome-file>
   </welcome-file-list>
