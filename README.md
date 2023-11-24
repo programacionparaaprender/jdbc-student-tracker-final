@@ -5,6 +5,10 @@
 ### primefaces responsivo
 >- https://www.primefaces.org/showcase-v8/ui/misc/responsive.xhtml
 
+### repositorios
+>- https://github.com/programacionparaaprender/jdbc-student-tracker-final
+>- https://github.com/programacionparaaprender/javaserverfaces
+
 ### driver oracle para conectarse a base de datos
 >- https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html
 
