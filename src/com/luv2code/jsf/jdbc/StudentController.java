@@ -114,7 +114,8 @@ public class StudentController {
 	}
 	
 	public StreamedContent getTempPdfFile() throws IOException {
-	     File testPdfFile = Paths.get("D:\\Facturas.pdf").toFile();
+		//C:\Users\luis1\Downloads\CV LUIS 11.23 res.pdf
+	     File testPdfFile = Paths.get("C:\\Users\\luis1\\Downloads\\CV LUIS 11.23 res.pdf").toFile();
 	     FileInputStream fileInputStream = new FileInputStream(testPdfFile);
 	     return new DefaultStreamedContent(fileInputStream, "application/pdf",
 	                "Facturas");

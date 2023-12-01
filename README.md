@@ -14,6 +14,9 @@
 >- https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html
 
 ### tablas autoincrementales
+>- https://www.kindacode.com/article/postgresql-create-tables-with-auto-increment-ids/
+
+### tablas autoincrementales
 >- https://es.stackoverflow.com/questions/524710/crear-un-primary-key-auto-increment-en-oracle
 
 ### Repositorio de librerias java

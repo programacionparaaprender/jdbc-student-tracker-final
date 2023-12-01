@@ -1,5 +1,10 @@
 <Context>
-
+  <Resource name="jdbc/student_postgresql" 
+  			auth="Container" type="javax.sql.DataSource"
+               maxActive="20" maxIdle="5" maxWait="10000"
+               username="sa" password="123" 
+               driverClassName="org.postgresql.Driver"
+               url="jdbc:postgresql://localhost:5434/student_tracker"/>
   <Resource name="jdbc/student_tracker" 
   			auth="Container" type="javax.sql.DataSource"
                maxActive="20" maxIdle="5" maxWait="10000"

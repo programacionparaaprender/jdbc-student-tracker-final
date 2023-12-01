@@ -20,7 +20,8 @@ public class StudentDbUtil {
 	private DataSource dataSource;
 	//private String jndiName = "java:comp/env/jdbc/student_tracker";
 	//private String jndiName = "java:comp/env/jdbc/student_tracker_sqlserver";
-	private String jndiName = "java:comp/env/jdbc/student_oracle";
+	//private String jndiName = "java:comp/env/jdbc/student_oracle";
+	private String jndiName = "java:comp/env/jdbc/student_postgresql";
 	
 	public static StudentDbUtil getInstance() throws Exception {
 		if (instance == null) {
