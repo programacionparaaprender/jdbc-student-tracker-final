@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:a="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:composite="http://java.sun.com/jsf/composite"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pf="http://primefaces.org/ui/extensions">
+<h:head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Student Tracker App</title>
+
+	<h:outputStylesheet library="css" name="style.css" />
+
+</h:head>
+
+<h:body>
+
+	<div id="wrapper">
+		<div id="header">
+			<h2>FooBar University</h2>
+		</div>
+	</div>
+
+	<div id="container">
+
+		<div id="content">
+			<p:scrollPanel id="idScrollPrueba" style="max-height:350px;"
+				mode="native">
+				<!-- <p:graphicImage id="docImageE2"
+						value="#{mbSession.imagen}" /> -->
+				<p:graphicImage id="imagenPrueba" value="#{studentController.factura}"
+					style="margin:100px auto;" />
+			</p:scrollPanel>
+			<p:commandButton value="Imprimir"
+				icon="fa fa-fw fa-print"
+				rendered="#{studentController.showImagen}"
+				update="imagenPrueba"
+				onclick="PF('widgetImagenImprimir').show()" />
+			<pf:documentViewer cache="false"
+				value="#{studentController.tempPdfFile}"
+				rendered="#{studentController.show}"
+				style="width: 80%; height: 80%;">
+				<f:param name="#pagemode" value="none" />
+				<f:param name="wmode" value="transparent" />
+			</pf:documentViewer>
+			<p:commandButton value="Imprimir PDF"
+				icon="fa fa-fw fa-print"
+				rendered="#{studentController.showPDF}"
+				update="imagenPrueba"
+				onclick="PF('widgetImagenImprimir').show()" />
+		</div>
+
+		<p:dialog id="dialogoImagenImprimir" header="Vista Previa"
+			widgetVar="widgetImagenImprimir" modal="true" closable="false"
+			resizable="false" draggable="false" position="center"
+			style="margin:30px; max-height:90%;">
+			<br />
+			<h:outputText value="Se procederá a imprimir la siguiente página."
+				styleClass="textSize" />
+			<br />
+			<br />
+			<h:outputText
+				value="Puede imprimir el documento"
+				styleClass="textSize" />
+			<br />
+			<br />
+			<p:commandButton value="Aceptar">
+				<p:printer target="imagenPrueba" />
+			</p:commandButton>
+			<p:commandButton value="Cerrar"
+				onclick="PF('widgetImagenImprimir').hide()" immediate="true" />
+		</p:dialog>
+
+	</div>
+
+</h:body>
+</html>
